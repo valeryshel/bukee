@@ -6,6 +6,9 @@
 @import "base/general";
 @import "../blocks/modules";
 
+$light-color: #fff;
+$accent-color: #65e496;
+
 h1, h2, h3, h4, p {
 	padding: 0;
 	margin: 0;
@@ -15,16 +18,26 @@ body {
 	font-family: 'Roboto Slab', serif;
 }
 
+.wrap {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
 .page-main {
 	background-image: url(../img/bg-main.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	color:$light-color;
 }
 
 .header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding-top: 47px;
+	padding-bottom: 80px;
 
 	&__logo {
 		display: block;
@@ -37,8 +50,26 @@ body {
 		list-style-type: none;
 		display: flex;
 		justify-content: flex-end;
+		font-family: 'Open Sans', serif;
+		
 		&__item {
-			margin-left: 15px;
+			margin-left: 22px;
+			padding-top: 7px;
+			padding-bottom: 6px;
+			border-bottom: 3px solid transparent;
+			transition: 0.3s;
+
+			&:hover {
+				border-bottom: 3px solid $accent-color;
+			};
+		}
+		&__item.active {
+			border-bottom: 3px solid $accent-color;
+		}
+		&__link {
+			color:$light-color;
+			text-decoration: none;
+			letter-spacing: 0.5px;
 		}
 	}
 }
