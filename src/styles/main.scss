@@ -75,7 +75,7 @@ body {
 }
 
 .block-text {
-	flex-basis: calc(90% - 500px);
+	flex-basis: calc(93% - 500px);
 
 	&__name {
 		font-family: 'Open Sans', serif;
@@ -104,9 +104,9 @@ body {
 	&__description {
 		font-family: 'Open Sans', serif;
 		font-size: 15px;
-		line-height: 23px;
-		letter-spacing: 1.3px;
-		margin-bottom: 20px;
+		line-height: 24.3px;
+		letter-spacing: 0.75px;
+		margin-bottom: 24px;
 	}
 
 	&__btn {
@@ -115,16 +115,28 @@ body {
 		color: $light-color;
 		text-decoration: none;
 		max-width: 250px;
+		height: 35px;
 		border-radius: 3px;
 		text-align: center;
 		font-size: 18px;
+		vertical-align: middle;
+		margin-top: 47px;
+		margin-bottom: 20px;
+		padding-top: 13px;
+		letter-spacing: 0.9px;
+	}
 
+	small {
+		font-style: italic;
+		letter-spacing: -0.2px;
+		margin-left: -1px;
 	}
 }
 
 .block-book {
 	display: flex;
 	justify-content:  flex-start;
+	padding-bottom: 157px;
 
 	&-demo {
 		display: block;
