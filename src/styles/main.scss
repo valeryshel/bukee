@@ -30,6 +30,10 @@ body {
 	color:$light-color;
 }
 
+.page {
+	padding-top: 175px;
+}
+
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -84,6 +88,13 @@ body {
 		letter-spacing: 0.8px;
 		margin-bottom: 28px;
 	}
+
+	&__name-top {
+		padding-left: 2px;
+		color: #696980;
+		margin-bottom: 21px;
+	}
+
 
 	&__title {
 		font-size: 48px;
@@ -147,4 +158,32 @@ body {
 		flex-basis: 500px;
 		border-radius: 7px;
 	}
-} 
+}
+
+
+.block-author {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.block-ava {
+	position: relative;
+	&__svg {
+		position: absolute;
+		right: 0;
+		top: -17px;
+		z-index: -1;
+	}
+
+	&__img {
+		margin-top: 32px;
+		margin-right: 43px;
+	}
+}
+
+.block-counter {
+	display: flex;
+	padding-top: 50px;
+	justify-content: space-around;
+}
