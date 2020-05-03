@@ -37,7 +37,7 @@ body {
 	max-width: 1170px;
 	margin: 0 auto;
 	padding-top: 47px;
-	padding-bottom: 80px;
+	padding-bottom: 180px;
 
 	&__logo {
 		display: block;
@@ -73,3 +73,66 @@ body {
 		}
 	}
 }
+
+.block-text {
+	flex-basis: calc(90% - 500px);
+
+	&__name {
+		font-family: 'Open Sans', serif;
+		font-size: 18px;
+		padding-left: 4.4px;
+		letter-spacing: 0.8px;
+		margin-bottom: 28px;
+	}
+
+	&__title {
+		font-size: 48px;
+		font-weight: 700;
+		letter-spacing: 1.5px;
+		margin-bottom: 41px;
+
+	span {
+		display: block;
+		color:$accent-color;
+		font-size: 18px;
+		margin-top: 11px;
+		padding-left: 3px;
+		letter-spacing: 1.0px;
+	}
+}
+
+	&__description {
+		font-family: 'Open Sans', serif;
+		font-size: 15px;
+		line-height: 23px;
+		letter-spacing: 1.3px;
+		margin-bottom: 20px;
+	}
+
+	&__btn {
+		display: block;
+		background-color: $accent-color;
+		color: $light-color;
+		text-decoration: none;
+		max-width: 250px;
+		border-radius: 3px;
+		text-align: center;
+		font-size: 18px;
+
+	}
+}
+
+.block-book {
+	display: flex;
+	justify-content:  flex-start;
+
+	&-demo {
+		display: block;
+		width: 447px;
+		height: 643px;
+		background-image: url(../img/book.svg);
+		background-repeat: no-repeat;
+		flex-basis: 500px;
+		border-radius: 7px;
+	}
+} 
