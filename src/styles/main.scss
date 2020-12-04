@@ -82,8 +82,25 @@ body {
 	}
 }
 
+.block-book {
+	display: flex;
+	justify-content:  flex-start;
+	padding-bottom: 157px;
+
+	&-demo {
+		display: block;
+		width: 447px;
+		height: 643px;
+		background-image: url(../img/book.svg);
+		background-repeat: no-repeat;
+		flex-basis: 500px;
+		border-radius: 7px;
+	}
+}
+
 .block-text {
 	flex-basis: calc(93% - 500px);
+	margin-left: 54px;
 
 	&__name {
 		font-family: 'Open Sans', serif;
@@ -145,22 +162,6 @@ body {
 		font-style: italic;
 		letter-spacing: -0.2px;
 		margin-left: -1px;
-	}
-}
-
-.block-book {
-	display: flex;
-	justify-content:  flex-start;
-	padding-bottom: 157px;
-
-	&-demo {
-		display: block;
-		width: 447px;
-		height: 643px;
-		background-image: url(../img/book.svg);
-		background-repeat: no-repeat;
-		flex-basis: 500px;
-		border-radius: 7px;
 	}
 }
 
