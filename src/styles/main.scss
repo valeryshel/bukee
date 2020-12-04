@@ -29,11 +29,12 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	color:$light-color;
+	padding-bottom: 159px;
 }
 
 .page {
-	padding-top: 175px;
-	margin-bottom: 165px;
+	padding-top: 177px;
+	padding-bottom: 162px;
 }
 
 .header {
@@ -85,8 +86,7 @@ body {
 .block-book {
 	display: flex;
 	justify-content:  flex-start;
-	padding-bottom: 157px;
-
+	
 	&-demo {
 		display: block;
 		width: 447px;
@@ -96,12 +96,14 @@ body {
 		flex-basis: 500px;
 		border-radius: 7px;
 	}
+	&-avatar {
+		margin-right: 54px;
+	}
 }
 
 .block-text {
 	flex-basis: calc(93% - 500px);
-	margin-left: 54px;
-
+	
 	&__name {
 		font-family: 'Open Sans', serif;
 		font-size: 18px;
@@ -138,7 +140,8 @@ body {
 		font-size: 15px;
 		line-height: 24.3px;
 		letter-spacing: 0.75px;
-		margin-bottom: 24px;
+		margin-bottom: 47px;
+		margin-left: 2px;
 	}
 
 	&__btn {
@@ -176,15 +179,16 @@ body {
 	position: relative;
 	&__svg {
 		position: absolute;
-		right: 0;
+		right: -3px;
 		top: -17px;
 		z-index: -1;
 	}
 
 	&__img {
 		margin-top: 32px;
-		margin-right: 43px;
+		margin-right: 42px;
 	}
+	
 }
 
 .block-counter {
