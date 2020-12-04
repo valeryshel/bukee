@@ -69,9 +69,11 @@ body {
 				border-bottom: 3px solid $accent-color;
 			};
 		}
-		&__item.active {
+
+		&__item.active { 
 			border-bottom: 3px solid $accent-color;
 		}
+
 		&__link {
 			color:$light-color;
 			text-decoration: none;
