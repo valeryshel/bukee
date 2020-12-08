@@ -116,12 +116,39 @@ body {
 	
 	&-demo {
 		display: block;
+		position: relative;
 		width: 447px;
 		height: 643px;
 		background-image: url(../img/book.svg);
 		background-repeat: no-repeat;
 		flex-basis: 500px;
 		border-radius: 7px;
+		&__title {
+			font-size: 36px;
+			text-transform: uppercase;
+			position: absolute;
+			left: 157px;
+			top: 87px;
+			letter-spacing: 1px;
+			span {
+				font-size: 14px;
+				font-family: 'Open Sans', serif;
+				color: $accent-color;
+				display: block;
+				text-transform: initial;
+				margin-top: 10px;
+				letter-spacing: 0.7px;
+			}
+		}
+		&__author {
+			font-size: 14px;
+				font-family: 'Open Sans', serif;
+				color: $accent-color;
+				position: absolute;
+				bottom: 52px;
+				left:87px;
+				letter-spacing: 0.7px;
+		}
 	}
 	&-avatar {
 		margin-right: 54px;
@@ -334,5 +361,20 @@ body {
 				}
 			}
 		}
+	}
+}
+
+.block-product {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	&-item {
+		background-image: url(../img/svg/booksmall.svg);
+		width: 270px;
+		height: 410px;
+		display: block;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
 	}
 }
