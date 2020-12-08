@@ -70,7 +70,7 @@ body {
 		display: block;
 		max-width: 220px;
 		font-size: 18px;
-		padding: 12px 0px;
+		padding: 11px 0px 15px 0px;
 		border: none;
 		border-radius: 3px ;
 		color: $light-color;
@@ -79,21 +79,9 @@ body {
 		text-decoration: none; 
 		margin: 30px auto 0px;
 		letter-spacing: 0.7px;
-		position: relative;
-		&::before {
-			position: absolute;
-			z-index: -1;
-			content: "";
-			display: block;
-			height: 20px;
-			width: 100%;
-			background-color: #b2f1be;
-			bottom: -2px;
-			left: 0;
-			border-radius: 3px;
-			 
-		}
+		box-shadow: 0 -2px #b2f1be inset;
 	}
+	
 }
 
 .header {
@@ -235,7 +223,7 @@ body {
 	&__btn {
 		display: block;
 		background: linear-gradient(to top left,#65e49c, #65a4af);
-		color: #fff;
+		color: $light-color;
 		text-decoration: none;
 		max-width: 237px;
 		height: 35px;
@@ -245,22 +233,12 @@ body {
 		vertical-align: middle;
 		margin-top: 49px;
 		margin-bottom: 20px;
-		padding-top: 13px;
+		padding: 11px 0 15px 0;
 		letter-spacing: 0.9px;
-		position: relative;
-		&::before {
-			position: absolute;
-			z-index: -1;
-			content: "";
-			display: block;
-			height: 10px;
-			width: 100%;
-			background-color: #b2f1be;
-			bottom: -2px;
-			left: 0;
-			border-radius: 3px;
-			 
-		}
+		box-shadow: 0 -2px #b2f1be inset;
+	}
+	&__btn--main {
+		box-shadow: 0 -2px #58b988 inset;
 	}
 
 	small {
@@ -375,25 +353,14 @@ body {
 			border-radius: 3px;
 			text-align: center;
 			font-size: 18px;
-			padding: 14px 45px;
+			padding: 11px 45px 15px 45px;
 			letter-spacing: 0.7px;
 			margin: 28px 0px 19px 5px;
-			position: relative;
+			box-shadow: 0 -2px #b2f1be inset;
 			&:focus {
 				outline: none;
 			}
-			&::before {
-				position: absolute;
-				z-index: -1;
-				content: "";
-				display: block;
-				height: 20px;
-				width: 100%;
-				background-color: #b2f1be;
-				bottom: -2px;
-				left: 0;
-				border-radius: 3px;			
-			}
+			
 		}
 	}
 	&-social {
