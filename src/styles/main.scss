@@ -49,6 +49,10 @@ body {
 		padding-top: 162px;
 		padding-bottom: 237px;
 	}
+	&_product {
+		padding-top: 162px;
+		padding-bottom: 237px;
+	}
 	&__title {
 		font-size: 48px;
 		color: $bg-dark-color;
@@ -61,6 +65,34 @@ body {
 		color: $accent-color;
 		text-align: center;
 		letter-spacing: 0.9px;
+	}
+	&__btn {
+		display: block;
+		max-width: 220px;
+		font-size: 18px;
+		padding: 12px 0px;
+		border: none;
+		border-radius: 3px ;
+		color: $light-color;
+		background: linear-gradient(to top left,#65e49c, #65a4af);
+		text-align: center;
+		text-decoration: none; 
+		margin: 30px auto 0px;
+		letter-spacing: 0.7px;
+		position: relative;
+		&::before {
+			position: absolute;
+			z-index: -1;
+			content: "";
+			display: block;
+			height: 20px;
+			width: 100%;
+			background-color: #b2f1be;
+			bottom: -2px;
+			left: 0;
+			border-radius: 3px;
+			 
+		}
 	}
 }
 
@@ -127,8 +159,8 @@ body {
 			font-size: 36px;
 			text-transform: uppercase;
 			position: absolute;
-			left: 157px;
-			top: 87px;
+			left: 133px;
+   			top: 116px;
 			letter-spacing: 1px;
 			span {
 				font-size: 14px;
@@ -202,7 +234,7 @@ body {
 
 	&__btn {
 		display: block;
-		background-color: #65e496;
+		background: linear-gradient(to top left,#65e49c, #65a4af);
 		color: #fff;
 		text-decoration: none;
 		max-width: 237px;
@@ -215,6 +247,20 @@ body {
 		margin-bottom: 20px;
 		padding-top: 13px;
 		letter-spacing: 0.9px;
+		position: relative;
+		&::before {
+			position: absolute;
+			z-index: -1;
+			content: "";
+			display: block;
+			height: 10px;
+			width: 100%;
+			background-color: #b2f1be;
+			bottom: -2px;
+			left: 0;
+			border-radius: 3px;
+			 
+		}
 	}
 
 	small {
@@ -322,7 +368,7 @@ body {
 			}
 		}
 		&__btn {
-			background-color: $accent-color;
+			background: linear-gradient(to top left,#65e49c, #65a4af);
 			border: none;
 			color: $light-color;
 			text-decoration: none;
@@ -332,8 +378,21 @@ body {
 			padding: 14px 45px;
 			letter-spacing: 0.7px;
 			margin: 28px 0px 19px 5px;
+			position: relative;
 			&:focus {
 				outline: none;
+			}
+			&::before {
+				position: absolute;
+				z-index: -1;
+				content: "";
+				display: block;
+				height: 20px;
+				width: 100%;
+				background-color: #b2f1be;
+				bottom: -2px;
+				left: 0;
+				border-radius: 3px;			
 			}
 		}
 	}
@@ -367,8 +426,11 @@ body {
 .block-product {
 	display: flex;
 	justify-content: space-around;
-	flex-wrap: wrap;
+	margin: 55px 0 84px 0;
 	&-item {
+		margin: 30px 0 0 0;
+	}
+	&-demo {
 		background-image: url(../img/svg/booksmall.svg);
 		width: 270px;
 		height: 410px;
@@ -376,5 +438,70 @@ body {
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
+		text-align: center;
+		margin: 0 auto;
+		position: relative;
+		&__title {
+			color: $light-color;
+			text-transform: uppercase;
+			text-align: center;
+			font-size: 24px;
+			letter-spacing: 1px;
+			font-weight: 700;
+			position: absolute;
+			top: 69px;
+  			left: 71px;;
+			span {
+				color: $accent-color;
+				margin-top: 8px;
+				text-transform: initial;
+				display: block;
+				font-size: 12px;
+				letter-spacing: 0.6px;
+				font-weight: 400;
+				font-family: "Open Sans";
+			}
+		}
+		&__author {
+			color: $accent-color;
+			text-transform: initial;
+			display: block;
+			font-size: 12px;
+			letter-spacing: 0.6px;
+			font-weight: 400;
+			font-family: "Open Sans",sans-serif;
+			position: absolute;
+			bottom: 29px;
+			left: 82px;
+		}
+	}
+	&-text {
+		max-width: 325px;
+		text-align: center;
+		margin: 33px auto 0;
+		h3 {
+			font-size: 24px;
+			letter-spacing: 1.2px;
+			color: $bg-dark-color;
+			font-weight: 700;
+			text-align: center;
+		}
+		p {
+			font-size: 15px;
+			letter-spacing: 0.75px;
+			color: $gray-color;
+			font-weight: 400;
+			text-align: center;
+			font-family: "Open Sans",sans-serif;
+			margin: 17px auto 17px;
+		}
+		a {
+			text-decoration: none;
+			color: $accent-color;
+			text-transform: uppercase;
+			font-family: "Open Sans",sans-serif;
+			font-weight: 700;
+			letter-spacing: 1px;
+		}
 	}
 }
