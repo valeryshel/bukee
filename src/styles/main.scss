@@ -290,7 +290,6 @@ body {
 .block-author {
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 85px;
 }
 
 .block-ava {
@@ -317,7 +316,7 @@ body {
 
 .block-counter {
 	display: flex;
-	padding-top: 127px;
+	padding-top: 212px;
 	justify-content: space-around;
 
 	p {
@@ -520,24 +519,28 @@ body {
 .block-blog {
 	display: flex;
 	justify-content: space-between;
+	margin-top: 84px;
 	&+ .page__btn {
 		display: block;
 		margin: 84px auto 0;
-		padding: 13px 0;
+		padding: 13px 33px;
 		max-width: 200px;
 	}
 	&-item {
+		max-width: 369px;
 		h4 {
 			font-size: 18px;
 			letter-spacing: 1px;
 			color: $bg-dark-color;
 			font-weight: 700;
 			font-family: "Roboto Slab";
+			margin-bottom: 3px;
 		}
 	}
 	&-info {
 		font-size: 15px;
 		display: flex;
+		margin-bottom: 12px;
 		a {
 			color: $accent-color;
 			text-decoration: none;
@@ -546,10 +549,13 @@ body {
 	&-img {
 		width: 369px;
 		height: 224px;
+		margin: 0 auto 16px;
 		overflow: hidden;
 		position: relative;
 		img {
 			position: absolute;
+			width: 369px;
+			height: 224px;
 			left: 50%;
 			top: 50%;
 			transform: translate(-50%, -50%) ;
@@ -559,7 +565,7 @@ body {
 
 	&__desc {
 		font-size: 15px;
-		letter-spacing: 1px;
+		letter-spacing: 0.75px;
 		color: $gray-color;
 		font-weight: 400;
 		font-family: "Open Sans",sans-serif;
