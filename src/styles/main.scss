@@ -41,12 +41,12 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	color:$light-color;
-	padding-bottom: 159px;
+	padding-bottom: 158px;
 }
 
 .page {
 	padding-top: 175px;
-	padding-bottom: 162px;
+	padding-bottom: 161px;
 	position: relative;
 	&_gray {
 		background-color: $bg-light-color;
@@ -54,8 +54,7 @@ body {
 		padding-bottom: 160px;
 	}
 	// &_dark-gray {
-	// 	background-color: $bg-dark-color;
-	// 	padding: 100px 0 100px;
+	// 	background-color: 
 	// }
 	&_product {
 		padding-top: 162px;
@@ -206,7 +205,7 @@ body {
 		font-size: 48px;
 		font-weight: 700;
 		letter-spacing: 1.5px;
-		margin-bottom: 40px;
+		margin-bottom: 38px;
 		&--left {
 			text-align: left;
 			color: $bg-dark-color;
@@ -242,19 +241,20 @@ body {
 		background: linear-gradient(to top left, #65e49c, #65a4af);
 		color: #fff;
 		text-decoration: none;
-		max-width: 251px;
+		max-width: 240px;
 		height: 35px;
 		border-radius: 3px;
 		text-align: center;
 		font-size: 18px;
-		margin-top: 47px;
-		margin-bottom: 15px;
-		padding: 11px 0 3px 0;
+		margin-top: 48px;
+		margin-bottom: 14px;
+		padding: 11px 0 4px 0;
 		letter-spacing: 0.9px;
 		box-shadow: 0 -2px #b2f1be inset;
 	}
 	&__btn--main {
 		box-shadow: 0 -2px #58b988 inset;
+		max-width: 251px;
 	}
 	small {
 		font-style: italic;
@@ -336,7 +336,7 @@ body {
 	justify-content: space-around;
 
 	p {
-		flex-basis: 110%;
+		flex-basis: 33%;
 		font-family: 'Open Sans', serif;
 		font-size: 18px;
 		text-align: center;
@@ -349,7 +349,11 @@ body {
 			font-size: 80px;
 			color: $accent-color;
 			margin-bottom: 44px;
+			letter-spacing: 3.25px;
 		}
+	}
+	p:nth-child(2) {
+		padding: 0 28px 0 40px;
 	}
 }
 
@@ -426,7 +430,8 @@ body {
 	&-social {
 		display: flex;
 		align-items: center;
-		margin-top: 30px;
+		margin-top: 29px;
+		padding-left: 5px;
 		&__title {
 			font-family: "Roboto Slab", serif;
 			font-size: 18px;
