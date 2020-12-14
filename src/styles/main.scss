@@ -51,14 +51,18 @@ body {
 	&_gray {
 		background-color: $bg-light-color;
 		padding-top: 162px;
-		padding-bottom: 160px;
+		padding-bottom: 162px;
 	}
-	// &_dark-gray {
-	// 	background-color: 
-	// }
+	&_dark-gray {
+	background-color: transparent;
+	 }
 	&_product {
 		padding-top: 162px;
-		padding-bottom: 237px;
+		padding-bottom: 169px;
+	}
+	&_subscribe {
+		padding-top: 156px;
+		padding-bottom: 154px;
 	}
 	&__title {
 		font-size: 48px;
@@ -184,7 +188,8 @@ body {
 .block-text {
 	flex-basis: calc(93% - 500px);
 	&--width {
-		flex-basis: calc(92% - 500px);
+		flex-basis: calc(92% - 510px);
+		padding: 6px 0 0 0px;
 	}
 	&__name {
 		font-family: 'Open Sans', serif;
@@ -298,8 +303,10 @@ body {
 			letter-spacing: 0.9px;
 			box-shadow: 0 -2px #b2f1be inset;
 		}
+		&:last-child {
+			margin-bottom: 31px;
+		} 
 	}
-
 }
 
 
@@ -317,15 +324,15 @@ body {
 		z-index: -1;
 		&--left {
 			right: initial;
-			left: -8px;
-			top: 5px;
+			left: 2px;
+			top: 10px;
 		}
 	}
 	&__img {
 		margin-top: 32px;
 		margin-right: 42px;
 		&--left {
-			margin: 53px 0px 0 44px;
+			margin: 59px 0px 0 53px;
 		}
 	}	
 }
@@ -362,6 +369,7 @@ body {
 	justify-content: space-between;
 	margin-top: 82px;
 	margin-bottom: 93px;
+	padding-left: 2px;
 	h3 {
 		margin-bottom: 20px;
 		letter-spacing: 1px;
@@ -376,7 +384,7 @@ body {
 	&-table {
 		flex-basis: 49.3%;
 		h3 {
-			padding-left: 5px;
+			padding-left: 6px;
 		}
 		&__list{
 			margin: 25px 0 0 0;
@@ -417,9 +425,9 @@ body {
 			border-radius: 3px;
 			text-align: center;
 			font-size: 18px;
-			padding: 11px 45px 15px 45px;
+			padding: 13px 45px 17px 45px;
 			letter-spacing: 0.7px;
-			margin: 28px 0px 19px 5px;
+			margin: 28px 0px 0px 9px;
 			box-shadow: 0 -2px #b2f1be inset;
 			&:focus {
 				outline: none;
@@ -431,7 +439,7 @@ body {
 		display: flex;
 		align-items: center;
 		margin-top: 29px;
-		padding-left: 5px;
+		padding-left: 3px;
 		&__title {
 			font-family: "Roboto Slab", serif;
 			font-size: 18px;
@@ -458,9 +466,12 @@ body {
 .block-product {
 	display: flex;
 	justify-content: space-around;
-	margin: 55px 0 84px 0;
+	margin: 54px 0 84px 0;
 	&-item {
 		margin: 30px 0 0 0;
+		&:nth-child(2) {
+			flex-basis: 32%;
+		}
 	}
 	&-demo {
 		background-image: url(../img/svg/booksmall.svg);
@@ -566,6 +577,7 @@ body {
 		a {
 			color: $accent-color;
 			text-decoration: none;
+			letter-spacing: 1px;
 		}
 	}
 	&-img {
@@ -613,6 +625,7 @@ body {
 		letter-spacing: 0.75px;
 		color: $gray-color;
 		font-weight: 400;
+		padding-left: 5px;
 	}
 	&__input {
 		width: 100%;
@@ -712,7 +725,7 @@ body {
 		list-style-type: none; 
 		margin-top: 13px;
 		&>li {
-			margin-right: 12px;
+			margin-right: 13px;
 			display: inline-block;
 			&>a {
 				color: $accent-color;
@@ -729,6 +742,7 @@ body {
 	h3 {
 		color: $accent-color;
 		margin-bottom: 4px;
+		letter-spacing: 1px;
 	}
 	&-thumb {
 		display: block; 
@@ -765,13 +779,13 @@ body {
 		width: 150px;
 		height: 150px;
 		display: block; 
-		margin: 0 auto;
+		margin: 40px auto 27px;
 	}
 	&-bq {
 		width: 49px;
 		height: 42px;
-		top: 0;
-		right: 0;
+		top: -4px;
+		right: -19px;
 		position: absolute;
 		background-repeat: no-repeat;
 		display: block;
@@ -785,7 +799,7 @@ body {
 	list-style-type: none;
 	display: flex;
 	justify-content: center;
-	padding: 0px;
+	padding: 36px;
 	&>li {
 		margin: 0 5px;
 		&>button {
@@ -812,5 +826,11 @@ body {
 				outline: none;
 			}
 		}
+	}
+}
+
+.slick-list, .slick-track {
+	&:focus {
+		outline: none;
 	}
 }
