@@ -42,6 +42,9 @@ body {
 	background-size: cover;
 	color:$light-color;
 	padding-bottom: 158px;
+	@media (max-width: 1020px) {
+		padding-bottom: 100px;
+	}
 }
 
 .page {
@@ -51,6 +54,9 @@ body {
 	@media (max-width: 1020px) {
 		padding: 120px 0;
 		}
+	@media (max-width: 900px) {
+		padding: 100px 0;
+		}
 	@media (max-width: 480px) {
 		padding: 50px 0;
 		}
@@ -58,11 +64,13 @@ body {
 		background-color: $bg-light-color;
 		padding-top: 162px;
 		padding-bottom: 162px;
+		color: $bg-dark-color;
 	}
 	&-carousel {
 	background-color: transparent;
 	@media (max-width: 1020px) {
 		background: $bg-dark-color;
+		padding-bottom: 50px;
 		}
 	}
 	&_product {
@@ -127,14 +135,14 @@ body {
 	margin: 0 auto;
 	padding: 47px 15px 178px 15px;
 	@media (max-width: 1020px) {
-		padding: 47px 15px 100px 15px;
+		padding: 47px 15px 80px 15px;
 	}
 	@media (max-width: 920px) {
 		flex-direction: column;
 	}
 	&__logo {
 		display: block;
-		background-image: url(../img/Logo.png);
+		background-image: url(../img/logo.png);
 		width: 137px;
 		height: 28px;
 	}
@@ -182,14 +190,21 @@ body {
 		flex-basis: 500px;
 		border-radius: 7px;
 		@media (max-width: 1020px) {
-			z-index: 2;
-			display: block;
-			flex-basis: 100%;
-			width: 447px;
-			height: 643px;
-			background-image: url(../img/book.svg);
-			background-size: cover;
-			margin: 0 auto;
+			display: none;
+		}
+		&__small {
+			display: none;
+			@media (max-width: 1020px) {
+				background-image: url(../img/book.svg);
+				background-repeat: no-repeat;
+				background-size: contain;
+				display: block;
+				width: 223px;
+				height: 320px;
+				margin: 0 auto 40px;
+				border-radius: 7px;
+				position: relative;
+			}
 		}
 		&__title {
 			font-size: 37px;
@@ -198,6 +213,11 @@ body {
 			left: 133px;
 			top: 119px;
 			letter-spacing: 0.45px;
+			@media (max-width: 1020px) {
+				font-size: 22px;
+				left: 56px;
+				top: 45px;
+			}
 			span {
 				font-size: 14px;
 				font-family: 'Open Sans', serif;
@@ -207,6 +227,11 @@ body {
 				margin-top: 10px;
 				letter-spacing: 0.7px;
 				font-weight: 100;
+				@media (max-width: 1020px) {
+					font-size: 12px;
+					letter-spacing: 0.5px;
+					max-width: 124px;
+				}
 			}
 		}
 		&__author {
@@ -242,6 +267,14 @@ body {
 		padding-left: 4.4px;
 		letter-spacing: 0.8px;
 		margin-bottom: 43px;
+		@media (max-width: 1100px) {
+			margin-bottom: 15px;
+		}
+		@media (max-width: 900px) {
+			padding: 0;
+			margin: 0 auto 43px;
+			text-align: center;
+		}
 	}
 	&__name_top {
 		padding-left: 3px;
@@ -256,6 +289,16 @@ body {
 		font-weight: 700;
 		letter-spacing: 1.5px;
 		margin-bottom: 38px;
+		@media (max-width: 1100px) {
+			line-height: 50px;
+			margin-bottom: 25px;
+			&>span {
+				line-height: 25px;
+			}
+		}
+		@media (max-width: 900px) {
+			text-align: center;
+		}
 		&--left {
 			text-align: left;
 			color: $bg-dark-color;
@@ -285,6 +328,10 @@ body {
 		letter-spacing: 0.75px;
 		margin-bottom: 23px;
 		margin-left: 2px;
+		@media (max-width: 1020px) {
+			max-width: 750px;
+			margin: 0 auto 23px;
+		}
 	}
 	&__btn {
 		display: block;
@@ -353,6 +400,9 @@ body {
 			padding: 11px 16px 15px 20px;
 			letter-spacing: 0.9px;
 			box-shadow: 0 -2px #b2f1be inset;
+			@media (max-width: 850px) {
+				margin: 20px auto;
+			}
 		}
 		&:last-child {
 			margin-bottom: 31px;
@@ -364,6 +414,7 @@ body {
 .block-author {
 	display: flex;
 	justify-content: space-between;
+	color: $bg-dark-color;
 	@media (max-width: 850px) {
 		flex-direction: column;
 		text-align: center;
@@ -389,6 +440,9 @@ body {
 			right: initial;
 			left: 2px;
 			top: 10px;
+			@media (max-width: 850px) {
+				top: initial;
+			}
 		}
 	}
 	&__img {
@@ -399,6 +453,9 @@ body {
 		}
 		&--left {
 			margin: 59px 0px 0 53px;
+			@media (max-width: 850px) {
+				margin: 30px 0px 25px 53px;
+			}
 		}
 	}	
 }
@@ -407,6 +464,9 @@ body {
 	display: flex;
 	padding-top: 212px;
 	justify-content: space-around;
+	@media (max-width: 1020px) {
+		padding-top: 120px;
+	}
 	@media (max-width: 750px) {
 		flex-direction: column;
 	}
@@ -418,7 +478,7 @@ body {
 		color: $gray-color;
 		letter-spacing: 0.7px;
 		@media (max-width: 750px) {
-			margin-bottom: 80px;
+			margin: 40px auto;
 		}
 		span {
 			font-family: 'Roboto Slab', serif;
@@ -442,10 +502,13 @@ body {
 	margin-bottom: 93px;
 	padding-left: 2px;
 	@media(max-width: 1020px) {
-		margin: 82px auto 93px;
+		margin: 82px auto 0px;
 		flex-direction: column;
 		max-width: 750px;
 	}
+	@media (max-width: 900px) {
+		margin: 50px auto 0px;
+		}
 	h3 {
 		margin-bottom: 20px;
 		letter-spacing: 1px;
@@ -455,6 +518,9 @@ body {
 		@media(max-width: 1020px) {
 			flex-basis: 100%;
 		}
+		@media (max-width: 750px) {
+			text-align: center;
+			}
 		&__desc{
 			font-family: 'Open Sans', serif;
 			letter-spacing: 0.75px;
@@ -468,6 +534,10 @@ body {
 		}
 		h3 {
 			padding-left: 6px;
+			@media (max-width: 750px) {
+				padding: 0;
+				text-align: center;
+				}
 		}
 		&__list{
 			margin: 25px 0 0 0;
@@ -476,11 +546,16 @@ body {
 			-moz-column-count: 2;
 			     column-count: 2;
 			-moz-column-gap: 23px;
-			     column-gap: 23px;
+				 column-gap: 23px;
+			@media (max-width: 750px) {
+				padding: 0 40px;
+				column-gap: 23px;
+				}
 			@media(max-width: 630px) {
 				-moz-column-count: 1;
 				     column-count: 1;
 			}
+			
 			&>li {
 				font-family: 'Open Sans', serif;
 				position: relative;
@@ -515,7 +590,7 @@ body {
 				height: 2px;
 				top: -12px;
 				position: absolute;
-				background-color: $accent-color;
+				background-color: #5fc9b3;
 				display: block;
 			}
 		}
@@ -531,6 +606,11 @@ body {
 			letter-spacing: 0.7px;
 			margin: 28px 0px 0px 9px;
 			box-shadow: 0 -2px #b2f1be inset;
+			@media (max-width: 750px) {
+				display: block;
+				margin: 30px auto 9px;
+				text-align: center;
+				}
 			&:focus {
 				outline: none;
 			}
@@ -542,6 +622,12 @@ body {
 		align-items: center;
 		margin-top: 29px;
 		padding-left: 3px;
+		@media (max-width: 750px) {
+			display: block;
+			margin: 30px auto 0px;
+			padding: 0;
+			text-align: center;
+			}
 		&__title {
 			font-family: "Roboto Slab", serif;
 			font-size: 18px;
@@ -551,13 +637,25 @@ body {
 		&__list {
 			list-style-type: none;
 			padding-left: 25px;
+			@media (max-width: 750px) {
+				padding: 0;
+				margin: 15px auto;
+				}
 			&>li {
 				display: inline-block;
 				font-size: 18px;
 				vertical-align: middle;
 				margin-right: 12px;
+				@media (max-width: 750px) {
+					margin-left: 12px;
+					}
 				&>a {
 					color: $accent-color;
+					&>i {
+						@media (max-width: 750px) {
+							font-size: 50px;
+							}
+					}
 
 				}
 			}
@@ -571,6 +669,9 @@ body {
 	margin: 54px 0 84px 0;
 	@media (max-width: 1020px) {
 		flex-direction: column;
+	}
+	@media (max-width: 900px) {
+		margin: 30px 0 70px 0;
 	}
 	&-item {
 		margin: 30px 0 0 0;
@@ -671,6 +772,9 @@ body {
 		margin: 84px auto 0;
 		padding: 13px 33px;
 		max-width: 200px;
+		@media (max-width: 900px) {
+			margin: 0 auto;
+		}
 	}
 	&-item {
 		flex-basis: 32%;
@@ -735,6 +839,12 @@ body {
 		@media (max-width: 1020px) {
 			margin-bottom: 40px;
 		}
+		&:last-child {
+			@media (max-width: 850px) {
+				margin-bottom: 0;
+			}
+		}
+		
 	}
 	&__title {
 		font-size: 48px;
@@ -754,6 +864,11 @@ body {
 		color: $gray-color;
 		font-weight: 400;
 		padding-left: 5px;
+		@media (max-width: 850px) {
+			max-width: 700px;
+			margin: 0 auto;
+			padding: 0;
+		}
 	}
 	&__input {
 		width: 100%;
@@ -829,6 +944,12 @@ body {
 	color: $gray;
 	padding: 158px 0 155px;
 	font-family: "Open Sans",sans-serif;
+	@media (max-width: 1020px) {
+		padding: 120px 0 120px;
+	}
+	@media (max-width: 850px) {
+		padding: 100px 0 100px;
+	}
 }
 
 .block-footer {
@@ -846,7 +967,7 @@ body {
 
 	&__logo {
 		display: block;
-		background-image: url(../img/Logo.png);
+		background-image: url(../img/logo-2.png);
 		background-repeat: no-repeat;
 		width: 137px;
 		height: 28px;
@@ -939,6 +1060,9 @@ body {
 		height: 150px;
 		display: block; 
 		margin: 40px auto 27px;
+		@media (max-width: 1200px) {
+			margin: 0px auto 27px;
+		}
 	}
 	&-bq {
 		width: 49px;
@@ -949,6 +1073,10 @@ body {
 		background-repeat: no-repeat;
 		display: block;
 		background-image: url(../img/qoutes.png);
+		@media (max-width: 1200px) {
+			top: 3px;
+			background-size: 70% 70%;
+		}
 	}
 }
 
@@ -987,24 +1115,9 @@ body {
 		}
 	}
 }
-
-.slick-list, .slick-track {
+.slick-initialized .slick-slide, .slick-list, .slick-track {
 	&:focus {
 		outline: none;
 	}
 }
 
-@media (max-width: 1100px) {
-	.block-text {
-		&__title {
-			line-height: 50px;
-			margin-bottom: 25px;
-			&>span {
-				line-height: 25px;
-			}
-		}
-		&__name {
-			margin-bottom: 15px;
-		}
-	}
-}
