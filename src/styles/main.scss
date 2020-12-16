@@ -643,7 +643,8 @@ body {
 				 column-gap: 23px;
 			@media (max-width: 750px) {
 				padding: 0 40px;
-				column-gap: 23px;
+				-moz-column-gap: 23px;
+				     column-gap: 23px;
 				}
 			@media(max-width: 630px) {
 				-moz-column-count: 1;
